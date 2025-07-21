@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Vuetify 3 + Nuxt 3 Starter",
+      title: "Todo List",
       titleTemplate: "%s | Vuetify 3 + Nuxt 3 Starter",
       link: [
         { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },

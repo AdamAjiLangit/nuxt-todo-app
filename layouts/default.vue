@@ -1,9 +1,13 @@
+<script setup>
+import { useRoute } from 'vue-router';
+import NavbarComponent from '../components/navbar.vue';
+
+const route = useRoute();
+</script>
+
 <template>
-	<div>
-		<VApp>
-			<VMain>
-				<slot />
-			</VMain>
-		</VApp>
-	</div>
+	<VApp>
+		<NavbarComponent v-if="!route.meta.hideNavbar" />
+		<slot />
+	</VApp>
 </template>
